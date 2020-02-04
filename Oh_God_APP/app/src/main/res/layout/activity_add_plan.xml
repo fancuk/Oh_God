@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="9dp"
+            android:paddingTop="9dp"
+            android:elevation="5dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="41dp"
+                android:layout_height="match_parent"
+                android:background="#00ff0000"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/back_arrow"></ImageButton>
+
+            <TextView
+                android:gravity="center"
+                android:fontFamily="@font/yanggin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="40dp"
+                android:text="새로운 계획"
+                android:textAlignment="center"
+                android:textColor="@color/colorBalck"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jalnan"
+                        android:text="무슨 일인가요?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="25dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ViewPlanName"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="일정 이름을 입력해 주세요"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jalnan"
+                        android:text="언제요?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="25dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/ViewNowDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/jalnan"
+                        android:text="입력이 되지 않았어요"
+                        android:textColor="@color/colorBalck"
+                        android:textSize="25dp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/ViewDayOfWeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/jalnan"
+                        android:text="입력이 되지 않았어요"
+                        android:textColor="@color/colorBalck"
+                        android:textSize="25dp"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/selectDayButton"
+                        android:layout_marginHorizontal="8dp"
+                        android:fontFamily="@font/yanggin"
+                        android:textColor="@color/colorWhite"
+                        android:text="날짜를 골라요"
+                        android:backgroundTint="@color/colorBalck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ></Button>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/ViewSaveButton"
+                        android:layout_marginHorizontal="8dp"
+                        android:fontFamily="@font/yanggin"
+                        android:textColor="@color/colorWhite"
+                        android:text="저장해요"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="광고"
+                    android:textSize="50dp"></TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
