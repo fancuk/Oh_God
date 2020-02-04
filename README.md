@@ -3,4 +3,4 @@
 
 Preview
 ---
-![](ver0.09.gif)
+![](./Oh_God_APP/previews/ver0.09.gif)
