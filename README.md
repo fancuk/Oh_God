@@ -8,10 +8,14 @@ Preview
 
 Members
 ---
-1. Android Front End [이정환](https://github.com/winterlood)
+1. [이정환](https://github.com/winterlood) 
+> Android Front End 
 
-2. Android Back End & Local DataBase [신다민](https://github.com/damin8)
+2. [신다민](https://github.com/damin8) 
+> Android Back End & Local DataBase 
 
-3. Android Back End & Local DataBase [하정구](https://github.com/hjg0629)
+3. [하정구](https://github.com/hjg0629) 
+> Android Back End & Local DataBase 
 
-4. REST API [김효빈](https://github.com/sg05138)
+4. [김효빈](https://github.com/sg05138) 
+> REST API 
