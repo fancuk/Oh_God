@@ -1,36 +1,57 @@
 
 public class Address {
-	public String getAddress(String str1, String str2) {
-		String addnum = "";
+	public String getAddressCode(String str1, String str2) {  
 		String addcode="";
-		if(str1.equals("¼­¿ï")||str1.equals("ÀÎÃµ")||str1.equals("°æ±âµµ")) {
-			addnum = "11B10101";
+		if(str1.equals("ì„œìš¸")){
+			addcode = "11B10101";
 		}
-		else if(str1.equals("ºÎ»ê")||str1.equals("¿ï»ê")||str1.equals("°æ»ó³²µµ")) {
-			addnum = "11H20201";
+		else if(str1.equals("ì¸ì²œ")) {
+			addcode = "11B20201";
 		}
-		else if(str1.equals("´ë±¸")||str1.equals("°æ»óºÏµµ")) {
-			addnum = "11H10701";
+		else if(str1.equals("ê²½ê¸°ë„")) {
+			addcode = "11B20601";
 		}
-		else if(str1.equals("±¤ÁÖ")||str1.equals("Àü¶ó³²µµ")) {
-			addnum = "11F20501";
+		else if(str1.equals("ë¶€ì‚°")){ 
+			addcode = "11H20201";
 		}
-		else if(str1.equals("Àü¶óºÏµµ")) {
-			addnum = "11F10201";
+		else if(str1.equals("ìš¸ì‚°")) {
+			addcode = "11H20101";
 		}
-		else if(str1.equals("´ëÀü")||str1.equals("¼¼Á¾")||str1.equals("ÃæÃ»³²µµ")) {
-			addnum = "11C20401";
+		else if(str1.equals("ê²½ìƒë‚¨ë„")) {
+			addcode = "11H20301";
 		}
-		else if(str1.equals("ÃæÃ»ºÏµµ")) {
-			addnum = "11C10301";
+		else if(str1.equals("ëŒ€êµ¬")){
+			addcode = "11H10701";
 		}
-		else if(str1.equals("°­¿øµµ")) {
-			addnum = "11D10101";
+		else if(str1.equals("ê²½ìƒë¶ë„")) {
+			addcode = "11H10501";
 		}
-		else if(str1.equals("Á¦ÁÖµµ")) {
-			addnum = "11G00201";
+		else if(str1.equals("ê´‘ì£¼")) {
+			addcode = "11F20501";
 		}
-		return addnum;
+		else if(str1.equals("ì „ë¼ë‚¨ë„")) {
+			addcode = "21F20801";
+		}
+		else if(str1.equals("ì „ë¼ë¶ë„")) {
+			addcode = "11F10201";
+		}
+		else if(str1.equals("ëŒ€ì „")) {
+		}
+		else if(str1.equals("ì„¸ì¢…")) {
+			addcode = "11C20404";
+		}
+		else if(str1.equals("ì¶©ì²­ë‚¨ë„")) {
+			addcode= "11C20201";
+		}
+		else if(str1.equals("ì¶©ì²­ë¶ë„")) {
+			addcode = "11C10301";
+		}
+		else if(str1.equals("ê°•ì›ë„")) {
+			addcode = "11D10101";
+		}
+		else if(str1.equals("ì œì£¼ë„")) {
+			addcode = "11G00201";
+		}
+		return addcode;
 	}
-
 }
