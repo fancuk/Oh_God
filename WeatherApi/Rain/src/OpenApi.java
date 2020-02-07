@@ -17,11 +17,11 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 public class OpenApi {
-	public String getUrl(String code) {//getUrl(ÁÖ¼ÒÁöÄÚµå)
+	public String getUrl(String code) {//getUrl(ì£¼ì†Œì§€ì½”ë“œ)
 		BufferedReader br = null;
 		try {
 			String urlstr = "http://apis.data.go.kr/1360000/VilageFcstMsgService/getLandFcst"
-					+ "?serviceKey=8EYCMs2wCpABWcZjFomx94YfV4ulqmaU%2FaQfzUoekjw2vjWoZLOKheNVZQ0fC48N0EUxcqrX6TdkP5LELTL9xA%3D%3D"
+					+ "?serviceKey= service_key"
 					+ "&pageNo=1&numOfRows=10&dataType=XML&regId="+code;
 			URL url = new URL(urlstr);
 			HttpURLConnection urlconnection = (HttpURLConnection) url.openConnection();
@@ -39,7 +39,7 @@ public class OpenApi {
 	}
 
 	public String getTodayWeather(String str) { // getWeather(xml)
-		//ÆÄ½Ì°úÁ¤
+		//íŒŒì‹±ê³¼ì •
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		factory.setNamespaceAware(true);
 		DocumentBuilder builder;
@@ -51,17 +51,17 @@ public class OpenApi {
 			XPathFactory xpathFactory = XPathFactory.newInstance();
 			XPath xpath = xpathFactory.newXPath();
 			
-			//item¿¡ µé¾îÀÖ´Â Á¤º¸µé¸¸ 
+			//itemì— ë“¤ì–´ìˆëŠ” ì •ë³´ë“¤ë§Œ 
 			XPathExpression expr = xpath.compile("//item"); 
 			NodeList nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
 			
-			// ¹ßÇ¥½Ã°£¿¡ µû¸¥ ³¯¾¾ Á¤º¸
+			// ë°œí‘œì‹œê°„ì— ë”°ë¥¸ ë‚ ì”¨ ì •ë³´
 			NodeList announceTime = nodeList.item(0).getChildNodes();
 			Node timeNode = announceTime.item(0);
 			String time = timeNode.getTextContent().substring(8);
 			int num = Integer.parseInt(time);
 			boolean flag = true;
-			if (num < 1100 && num >= 500) { // ¿ÀÀü, ¿ÀÈÄ 
+			if (num < 1100 && num >= 500) { // ì˜¤ì „, ì˜¤í›„ 
 				flag = false;
 			}
 			String percent = "";
@@ -70,10 +70,10 @@ public class OpenApi {
 				NodeList child = nodeList.item(i).getChildNodes();
 				for (int j = 0; j < child.getLength(); j++) {
 					Node node = child.item(j);
-					if (node.getNodeName() == "rnSt") { //°­¼öÈ®·ü
+					if (node.getNodeName() == "rnSt") { //ê°•ìˆ˜í™•ë¥ 
 						percent = node.getTextContent();
 					} 
-					else if (node.getNodeName() == "rnYn") { //ºñÀÇ Á¾·ù
+					else if (node.getNodeName() == "rnYn") { //ë¹„ì˜ ì¢…ë¥˜
 							weather = node.getTextContent();
 					}
 				}
@@ -85,10 +85,10 @@ public class OpenApi {
 				}
 			}
 			int rain = Integer.parseInt(percent);
-			if(rain<30) { //ºñ°¡ ¿ÀÁö ¾Ê´Â °æ¿ì or °­¼öÈ®·üÀÌ 30ÆÛ ¹Ì¸¸ÀÎ °æ¿ì
+			if(rain<30) { //ë¹„ê°€ ì˜¤ì§€ ì•ŠëŠ” ê²½ìš° or ê°•ìˆ˜í™•ë¥ ì´ 30í¼ ë¯¸ë§Œì¸ ê²½ìš°
  				return "0";
  			}
- 			else { // ºñ°¡ ¿À´Â °æ¿ì Á¾·ù¿Í È®·üÀ» ¸®ÅÏ
+ 			else { // ë¹„ê°€ ì˜¤ëŠ” ê²½ìš° ì¢…ë¥˜ì™€ í™•ë¥ ì„ ë¦¬í„´
  				return percent+"% "+weather;
  			}
 
