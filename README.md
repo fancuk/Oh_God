@@ -2,6 +2,9 @@
 ☂ Today is rainy day
 ---
 
+![](.//Oh_God_APP/previews/archive1.png)
+![](.//Oh_God_APP/previews/archive2.png)
+
 Preview
 ---
 ![](./Oh_God_APP/previews/ver0.09.gif)
