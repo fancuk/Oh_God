@@ -2,7 +2,10 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+<!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorAccent">#FF0000</color>
+    <color name="colorLightAccent">#E94444</color>
+
     <color name="colorNavIcon">#dae9f6</color>
     <color name="colorNavText">#01294b</color>
     <color name="colorLightGray">#979797</color>
@@ -10,5 +13,6 @@
     <color name="colorTextGray">#555555</color>
     <color name="colorThemeColor">#02E08A</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorVeryLightGray">#E2E2E2</color>
 
 </resources>

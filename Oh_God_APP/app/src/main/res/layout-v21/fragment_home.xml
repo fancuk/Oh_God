@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/colorWhite"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/jalnan"
+                android:text="HOME"
+                android:textColor="@color/colorBalck"
+                android:textSize="25dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="38"
+            android:background="@color/colorWhite"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="50"
+                    android:fontFamily="@font/jalnan"
+                    android:text="Today "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25dp"></TextView>
+                <LinearLayout
+                    android:layout_weight="100"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/jalnan"
+                    android:text="2020.02.03 (일)요일 "
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="18"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ViewFirstLocationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gray_radius_shape"
+                    android:clickable="true"
+                    android:fontFamily="@font/jalnan"
+                    android:paddingHorizontal="10dp"
+                    android:text="서울"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="18"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ViewPercentOnHomeFrag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/jalnan"
+                    android:text="100%"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/jalnan"
+                    android:text="확률로"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/ViewWeatherOnFrag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/jalnan"
+                    android:text="비가 옵니다"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ViewHomeFragTodayWeatherBackGround"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="35"
+            android:background="@color/colorWhite"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="50"
+                        android:fontFamily="@font/jalnan"
+                        android:text="Notice "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="25dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="85"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ViewSetTimeButton"
+                        android:layout_width="0dp"
+                        android:layout_height="66dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="80"
+                        android:background="@color/colorWhite"
+                        android:clickable="true"
+                        android:elevation="5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10">
+
+                            <TextView
+                                android:id="@+id/ViewAM_PM"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/yanggin"
+                                android:text="오전"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBalck"
+                                android:textSize="30dp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10">
+
+                            <TextView
+                                android:id="@+id/ViewAlarmTimeOfHour"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/yanggin"
+                                android:text="10시"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBalck"
+                                android:textSize="30dp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10">
+
+                            <TextView
+                                android:id="@+id/ViewAlarmTimeOfMinute"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/yanggin"
+                                android:text="22분"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBalck"
+                                android:textSize="30dp"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/jalnan"
+                        android:text="매일 위에 설정된 시간에 알려줄게요"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/jalnan"
+                        android:text="잊어버리지 말고 오늘도 아! 맞다"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="광고">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
      android:layout_height="match_parent"
+
     android:layout_width="match_parent">
     <androidx.cardview.widget.CardView
         android:foregroundGravity="center"
         android:layout_margin="5dp"
-        android:layout_width="400dp"
+        android:layout_width="0dp"
+        android:layout_weight="100"
         android:layout_height="wrap_content"
         android:id="@+id/plan_card"
         card_view:cardCornerRadius="10dp"
@@ -16,7 +18,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp"
+            android:layout_height="100dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -25,7 +27,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:background="@color/colorThemeColor"
+                    android:background="@color/colorLightAccent"
                     android:layout_marginVertical="20dp"
                     android:layout_width="5dp"
                     android:layout_height="match_parent" />
@@ -37,7 +39,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="13dp"
                         android:orientation="vertical">
@@ -49,31 +52,37 @@
                             android:fontFamily="@font/yanggin"
                             android:text="노트북 충전기"
                             android:textColor="@color/colorBalck"
-                            android:textSize="30dp"></TextView>
+                            android:textSize="20dp"></TextView>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_marginLeft="20dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
                         android:orientation="horizontal" >
                         <TextView
                             android:id="@+id/plan_date"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
                             android:layout_height="match_parent"
                             android:fontFamily="@font/yanggin"
                             android:text="2020-02-04"
                             android:textColor="@color/colorTextGray"
-                            android:textSize="30dp"></TextView>
+                            android:textSize="20dp"></TextView>
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
                             android:layout_height="match_parent">
                             <View
-                                android:layout_width="110dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="90"
                                 android:layout_height="0dp"></View>
                             <ImageView
-                                android:layout_marginTop="20dp"
-                                android:layout_width="30dp"
+                                android:layout_gravity="right"
+                                android:layout_width="0dp"
+                                android:layout_weight="10"
                                 android:layout_height="30dp"
                                 android:scaleType="fitCenter"
                                 android:src="@drawable/alarm"></ImageView>

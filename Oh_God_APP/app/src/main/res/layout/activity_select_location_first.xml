@@ -11,13 +11,15 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
-                android:layout_marginBottom="9dp"
-                android:paddingTop="9dp"
-                android:elevation="5dp"
-                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
-                android:layout_height="60dp">
+                android:layout_height="0dp"
+                android:layout_marginBottom="9dp"
+                android:layout_weight="9"
+                android:background="@color/colorWhite"
+                android:elevation="5dp"
+                android:paddingTop="9dp">
 
                 <ImageButton
                     android:id="@+id/backButton"
@@ -28,229 +30,325 @@
                     app:srcCompat="@drawable/back_arrow"></ImageButton>
 
                 <TextView
-                    android:gravity="center"
-                    android:fontFamily="@font/yanggin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginRight="40dp"
+                    android:fontFamily="@font/yanggin"
+                    android:gravity="center"
                     android:text="위치 정보 변경"
                     android:textAlignment="center"
                     android:textColor="@color/colorBalck"
                     android:textSize="20dp"></TextView>
             </LinearLayout>
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="0dp"
+                android:layout_weight="91">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"></LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="80"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="68dp">
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <Button
-                        android:layout_marginLeft="20dp"
-                        android:height="20dp"
                         android:id="@+id/seoulButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="서울"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/IncheonButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="인천"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/GyeonggiButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="경기"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="68dp">
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <Button
-                        android:layout_marginLeft="20dp"
-                        android:height="20dp"
                         android:id="@+id/busanButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="부산"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/ulsanButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="울산"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/GyeongnamButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="경남"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="68dp">
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <Button
-                        android:layout_marginLeft="20dp"
-                        android:height="20dp"
                         android:id="@+id/DeaguButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="대구"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/GyeongBukButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="경북"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/GwangjuButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="광주"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="68dp">
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <Button
-                        android:layout_marginLeft="20dp"
-                        android:height="20dp"
                         android:id="@+id/JeonNamButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="전남"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/JeonBukButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="전북"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/DeajonButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="대전"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="68dp">
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <Button
-                        android:layout_marginLeft="20dp"
-                        android:height="20dp"
                         android:id="@+id/SejongButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="세종"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/ChungNamButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="충남"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
                     <Button
-                        android:height="20dp"
                         android:id="@+id/ChungBukButton"
-                        app:cornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
                         android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
                         android:text="충북"
-                        android:fontFamily="@font/yanggin"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="68dp">
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <Button
-                        android:layout_marginLeft="20dp"
-                        android:height="20dp"
                         android:id="@+id/GangWonButton"
-                        app:cornerRadius="15dp"
-                        android:backgroundTint="@color/colorAccent"
-                        android:text="강원"
-                        android:fontFamily="@font/yanggin"
-                        android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
-                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:height="20dp"
-                        android:id="@+id/JejuButton"
-                        app:cornerRadius="15dp"
                         android:backgroundTint="@color/colorAccent"
-                        android:text="제주"
                         android:fontFamily="@font/yanggin"
+                        android:text="강원"
                         android:textColor="@color/colorWhite"
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"></Button>
+                        app:cornerRadius="15dp"></Button>
+
+                    <Button
+                        android:id="@+id/JejuButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="20dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/yanggin"
+                        android:text="제주"
+                        android:textColor="@color/colorWhite"
+                        app:cornerRadius="15dp"></Button>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"></LinearLayout>
             </LinearLayout>
     </LinearLayout>
 </LinearLayout>

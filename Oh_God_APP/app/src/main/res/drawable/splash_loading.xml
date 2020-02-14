@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/splash_view">
+    android:background="@drawable/splash_loading_white">
     <item
-        android:drawable="@color/colorPrimaryDark">
+        android:drawable="@color/colorWhite">
     </item>
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/splash_view" />
+            android:src="@drawable/splash_loading_white" />
     </item>
 </layer-list>
