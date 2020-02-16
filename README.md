@@ -2,6 +2,8 @@
 ☂ Today is rainy day
 ---
 
+[사전출시](https://play.google.com/store/apps/details?id=com.moonbanggoo.ohgod)
+
 ![](.//Oh_God_APP/previews/archive1.png)
 ![](.//Oh_God_APP/previews/archive2.png)
 
