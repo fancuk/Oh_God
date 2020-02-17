@@ -1,7 +1,7 @@
 # Oh_God🤣
 ☂ Today is rainy day
 ---
-![](./Oh_God_APP/previews/app_banner.PNG)
+![](./Oh_God_APP/previews/app_banner.png)
 [출시](https://play.google.com/store/apps/details?id=com.moonbanggoo.ohgod)
 
 ![](.//Oh_God_APP/previews/archive1.png)
